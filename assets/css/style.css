@@ -229,7 +229,7 @@ main {
 }
 
 #content .members-list {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 #content .member-name {
@@ -285,7 +285,7 @@ main {
 }
 
 .places-list {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .places-list .place-img {
@@ -357,6 +357,7 @@ main {
   border: none;
   padding: 10px 16px;
   float: right;
+  -webkit-appearance: none;
 }
 
 .contact-form .form-submit-btn:hover {

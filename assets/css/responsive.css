@@ -7,7 +7,16 @@
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
+  /* Common */
+  .s-col-1 {
+    width: 100%;
+  }
+
+  .s-mt-8 {
+    margin-top: 8px !important;
+  }
+
   #header {
     overflow: hidden;
   }
@@ -40,5 +49,24 @@
   #nav .subnav a {
     color: #fff;
     padding: 5px 42px;
+  }
+
+  /* About */
+  #content .member-img {
+    width: 60%;
+  }
+
+  /* Tour */
+  .places-list .place-buy-btn {
+    width: 100%;
+  }
+
+  /* Contact */
+  .contact-form {
+    margin-top: 16px;
+  }
+
+  .contact-form .form-submit-btn {
+    width: 100%;
   }
 }
