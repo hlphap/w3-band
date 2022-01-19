@@ -80,9 +80,11 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: space-between;
   z-index: 1;
+}
+
+#header nav {
+  display: inline-block;
 }
 
 #nav li {
@@ -126,6 +128,7 @@ main {
   line-height: 38px;
 }
 
+#header .mobile-menu-btn .menu-icon,
 #header .search-btn .search-icon {
   font-size: 20px;
   font-weight: 700;
@@ -134,9 +137,28 @@ main {
   line-height: 46px;
 }
 
+#header .mobile-menu-btn,
+#header .search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#header .mobile-menu-btn {
+  display: none;
+}
+
 #header .search-btn:hover {
   background-color: red;
   cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover {
+  background-color: #ccc;
+}
+
+#header .mobile-menu-btn .menu-icon:hover {
+  color: #000;
 }
 
 /* End header */
@@ -174,8 +196,11 @@ main {
 
 #content .content-section {
   width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 64px 0 112px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #content .section-heading {
